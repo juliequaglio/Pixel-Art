@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PaletaCores
+comment0.text=\r\n\ Componente\ que\ exibe\ opcoes\ de\ cores\ e\ acoes\ (como\ limpar\ tela)\r\n\ para\ facilitar\ o\ uso\ por\ criancas\ e\ alunos.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 1.0\r\n
+comment1.params=painelDesenho
+comment1.target=PaletaCores(PainelDesenho)
+comment1.text=\r\n\ Construtor\ da\ Paleta\ de\ Cores.\r\n\ \r\n\ @param\ painelDesenho\ Referencia\ ao\ PainelDesenho\ para\ atualizar\ a\ cor\ selecionada\r\n
+numComments=2

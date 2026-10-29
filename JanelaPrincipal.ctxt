@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=JanelaPrincipal
+comment0.text=\r\n\ Janela\ principal\ da\ aplicacao\ que\ agrupa\ o\ painel\ de\ desenho\ e\ a\ paleta\ de\ cores.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=JanelaPrincipal()
+comment1.text=\r\n\ Construtor\ da\ JanelaPrincipal.\r\n
+numComments=2

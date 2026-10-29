@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Pixel
+comment0.text=\r\n\ Representa\ um\ pixel\ individual\ no\ plano\ de\ pixel\ art.\r\n\ Armazena\ suas\ coordenadas\ logicas\ (coluna\ x\ e\ linha\ y)\ e\ sua\ cor\ RGB.\r\n\ \r\n\ @author\ \r\n\ Ana\ Paula\ Barros\ de\ Jesus\r\n\ Julie\ Quaglio\r\n\ \r\n\ @version\ 1.0\r\n
+comment1.params=x\ y\ cor
+comment1.target=Pixel(int,\ int,\ java.awt.Color)
+comment1.text=\r\n\ Construtor\ da\ classe\ Pixel.\r\n\ \r\n\ @param\ x\ Posicao\ da\ coluna\ no\ grid\ (sistema\ de\ coordenadas\ logico)\r\n\ @param\ y\ Posicao\ da\ linha\ no\ grid\ (sistema\ de\ coordenadas\ logico)\r\n\ @param\ cor\ Cor\ RGB\ associada\ a\ este\ pixel\r\n
+comment2.params=
+comment2.target=int\ getX()
+comment3.params=
+comment3.target=int\ getY()
+comment4.params=
+comment4.target=java.awt.Color\ getCor()
+comment5.params=cor
+comment5.target=void\ setCor(java.awt.Color)
+numComments=6

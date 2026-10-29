@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=GridPixelArt
+comment0.text=\r\n\ Gerencia\ a\ matriz\ de\ pixels\ e\ realiza\ os\ calculos\ do\ sistema\ de\ coordenadas,\r\n\ convertendo\ posicoes\ em\ pixels\ de\ tela\ para\ coordenadas\ de\ matriz.\r\n\ Cada\ pixel\ e\ renderizado\ como\ um\ retangulo\ (primitiva\ grafica).\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 1.0\r\n
+comment1.params=colunas\ linhas\ tamanhoPixelTela
+comment1.target=GridPixelArt(int,\ int,\ int)
+comment1.text=\r\n\ Construtor\ do\ Grid\ de\ Pixel\ Art.\r\n\ \r\n\ @param\ colunas\ Numero\ de\ colunas\ na\ matriz\r\n\ @param\ linhas\ Numero\ de\ linhas\ na\ matriz\r\n\ @param\ tamanhoPixelTela\ Tamanho\ em\ pixels\ de\ cada\ bloco/retangulo\ na\ tela\r\n
+comment2.params=
+comment2.target=void\ limparGrid()
+comment2.text=\r\n\ Inicializa\ ou\ limpa\ o\ grid\ com\ a\ cor\ branca.\r\n
+comment3.params=mouseX\ mouseY\ cor
+comment3.target=void\ pintarPixelPorCoordenadaTela(int,\ int,\ java.awt.Color)
+comment3.text=\r\n\ Pinta\ um\ pixel\ especifico\ na\ matriz\ logica\ a\ partir\ de\ coordenadas\ de\ tela\ (x,\ y\ do\ mouse).\r\n\ \r\n\ @param\ mouseX\ Coordenada\ X\ na\ tela\ (pixels)\r\n\ @param\ mouseY\ Coordenada\ Y\ na\ tela\ (pixels)\r\n\ @param\ cor\ Cor\ a\ ser\ aplicada\ ao\ pixel\r\n
+comment4.params=g
+comment4.target=void\ desenhar(java.awt.Graphics)
+comment4.text=\r\n\ Renderiza\ o\ grid\ e\ cada\ retangulo\ (primitiva\ grafica)\ correspondente\ ao\ pixel\ na\ tela.\r\n\ \r\n\ @param\ g\ Contexto\ grafico\ AWT\r\n
+comment5.params=
+comment5.target=int\ getLarguraTotalTela()
+comment6.params=
+comment6.target=int\ getAlturaTotalTela()
+numComments=7

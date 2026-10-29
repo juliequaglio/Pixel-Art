@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PainelDesenho
+comment0.text=\r\n\ Componente\ visual\ Swing\ onde\ o\ desenho\ ocorre.\r\n\ Captura\ eventos\ do\ mouse\ e\ interage\ com\ o\ GridPixelArt.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 1.0\r\n
+comment1.params=grid
+comment1.target=PainelDesenho(GridPixelArt)
+comment1.text=\r\n\ Construtor\ do\ Painel\ de\ Desenho.\r\n\ \r\n\ @param\ grid\ Instancia\ do\ GridPixelArt\r\n
+comment2.params=e
+comment2.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment3.params=e
+comment3.target=void\ mouseDragged(java.awt.event.MouseEvent)
+comment4.params=cor
+comment4.target=void\ setCorAtual(java.awt.Color)
+comment5.params=
+comment5.target=java.awt.Color\ getCorAtual()
+comment6.params=
+comment6.target=void\ limpar()
+comment7.params=g
+comment7.target=void\ paintComponent(java.awt.Graphics)
+numComments=8
