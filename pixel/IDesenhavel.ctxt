@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IDesenhavel
+comment0.text=\r\n\ Interface\ que\ define\ o\ contrato\ para\ objetos\ que\ podem\ ser\ desenhados\r\n\ na\ tela\ usando\ a\ biblioteca\ grafica\ do\ Java.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 1.0\r\n
+comment1.params=g
+comment1.target=void\ desenhar(java.awt.Graphics)
+comment1.text=\r\n\ Desenha\ o\ elemento\ na\ tela\ utilizando\ o\ contexto\ grafico\ fornecido.\r\n\ \r\n\ @param\ g\ Contexto\ grafico\ Java\ AWT\r\n
+numComments=2

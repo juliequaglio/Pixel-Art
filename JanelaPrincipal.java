@@ -1,6 +1,7 @@
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
 
+import pixel.*;
 /**
  * Janela principal da aplicacao que agrupa o painel de desenho e a paleta de cores.
  * 

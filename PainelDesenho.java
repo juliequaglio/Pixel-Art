@@ -6,6 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
+import pixel.*;
 /**
  * Componente visual Swing onde o desenho ocorre.
  * Captura eventos do mouse e interage com o GridPixelArt.
