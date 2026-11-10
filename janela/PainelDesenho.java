@@ -1,3 +1,5 @@
+package janela;
+
 import javax.swing.JPanel;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -13,7 +15,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-import pixel.*;
+import pixel.GridPixelArt;
 
 /**
  * Componente visual Swing onde o desenho ocorre.

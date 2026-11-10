@@ -1,5 +1,5 @@
 import javax.swing.SwingUtilities;
-
+import janela.*;
 /**
  * Classe de entrada principal do sistema.
  * 
