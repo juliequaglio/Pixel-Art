@@ -13,6 +13,8 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
+import pixel.*;
+
 /**
  * Componente visual Swing onde o desenho ocorre.
  * Captura eventos do mouse e salva a arte em PNG.

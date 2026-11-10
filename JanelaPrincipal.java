@@ -8,6 +8,8 @@ import java.awt.Font;
 import java.awt.Color;
 import java.awt.FlowLayout;
 
+import pixel.*;
+
 /**
  * Janela principal configurada para EXECUTAR EM TELA CHEIA.
  * Organiza o topo estilizado em tons de rosa e contraste escuro, 
