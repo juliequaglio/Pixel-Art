@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+<<<<<<< HEAD
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
@@ -15,6 +16,15 @@ import java.awt.FlowLayout;
  * 
  * @author Julie Quaglio
  * @version 3.1
+=======
+import java.awt.BorderLayout;
+
+/**
+ * Janela principal da aplicacao que agrupa o painel de desenho e a paleta de cores.
+ * 
+ * @author Julie Quaglio
+ * @version 1.0
+>>>>>>> main
  */
 public class JanelaPrincipal extends JFrame {
 
@@ -24,6 +34,7 @@ public class JanelaPrincipal extends JFrame {
     public JanelaPrincipal() {
         setTitle("Pixel Art - Iniciacao a Logica Computacional");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+<<<<<<< HEAD
         
         // CONFIGURACAO PARA TELA CHEIA AO COMPILAR E EXECUTAR
         setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -78,5 +89,20 @@ public class JanelaPrincipal extends JFrame {
             return new Font("Monospaced", estilo, tamanho);
         }
         return f;
+=======
+        setResizable(false);
+        setLayout(new BorderLayout());
+
+        // Configuracao do grid: 20x20 blocos de 25 pixels cada
+        GridPixelArt grid = new GridPixelArt(20, 20, 25);
+        PainelDesenho painelDesenho = new PainelDesenho(grid);
+        PaletaCores paletaCores = new PaletaCores(painelDesenho);
+
+        add(painelDesenho, BorderLayout.CENTER);
+        add(paletaCores, BorderLayout.SOUTH);
+
+        pack();
+        setLocationRelativeTo(null);
+>>>>>>> main
     }
 }
