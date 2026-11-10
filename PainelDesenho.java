@@ -1,17 +1,13 @@
 import javax.swing.JPanel;
-<<<<<<< HEAD
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
-=======
->>>>>>> main
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-<<<<<<< HEAD
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -23,15 +19,6 @@ import java.io.IOException;
  * 
  * @author Julie Quaglio
  * @version 3.0
-=======
-
-/**
- * Componente visual Swing onde o desenho ocorre.
- * Captura eventos do mouse e interage com o GridPixelArt.
- * 
- * @author Julie Quaglio
- * @version 1.0
->>>>>>> main
  */
 public class PainelDesenho extends JPanel {
     private GridPixelArt grid;
@@ -47,13 +34,8 @@ public class PainelDesenho extends JPanel {
         this.corAtual = Color.BLACK;
 
         setPreferredSize(new Dimension(grid.getLarguraTotalTela(), grid.getAlturaTotalTela()));
-<<<<<<< HEAD
         setBackground(Color.WHITE);
 
-=======
-
-        // Evento de clique do mouse para pintar um unico bloco
->>>>>>> main
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -62,10 +44,6 @@ public class PainelDesenho extends JPanel {
             }
         });
 
-<<<<<<< HEAD
-=======
-        // Evento de arrastar o mouse para pintar continuamente
->>>>>>> main
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseDragged(MouseEvent e) {
@@ -88,7 +66,6 @@ public class PainelDesenho extends JPanel {
         repaint();
     }
 
-<<<<<<< HEAD
     /**
      * Abre uma caixa de dialogo para guardar a imagem PNG.
      */
@@ -115,8 +92,6 @@ public class PainelDesenho extends JPanel {
         }
     }
 
-=======
->>>>>>> main
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);

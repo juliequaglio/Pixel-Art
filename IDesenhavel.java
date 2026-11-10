@@ -5,11 +5,7 @@ import java.awt.Graphics;
  * na tela usando a biblioteca grafica do Java.
  * 
  * @author Julie Quaglio
-<<<<<<< HEAD
  * @version 3.0
-=======
- * @version 1.0
->>>>>>> main
  */
 public interface IDesenhavel {
     /**

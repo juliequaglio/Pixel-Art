@@ -1,6 +1,5 @@
 import javax.swing.JPanel;
 import javax.swing.JButton;
-<<<<<<< HEAD
 import javax.swing.JLabel;
 import javax.swing.BorderFactory;
 import javax.swing.SwingConstants;
@@ -15,39 +14,20 @@ import java.awt.Font;
  * 
  * @author Julie Quaglio
  * @version 3.0
-=======
-import java.awt.Color;
-import java.awt.FlowLayout;
-import java.awt.Dimension;
-
-/**
- * Componente que exibe opcoes de cores e acoes (como limpar tela)
- * para facilitar o uso por criancas e alunos.
- * 
- * @author Julie Quaglio
- * @version 1.0
->>>>>>> main
  */
 public class PaletaCores extends JPanel {
     private PainelDesenho painelDesenho;
 
     private final Color[] CORES = {
-<<<<<<< HEAD
         Color.BLACK, Color.DARK_GRAY, Color.GRAY, Color.LIGHT_GRAY, Color.WHITE,
         new Color(139, 69, 19), new Color(178, 34, 34), Color.RED, Color.ORANGE, Color.YELLOW,
         new Color(255, 215, 0), Color.GREEN, new Color(34, 139, 34), Color.CYAN, new Color(30, 144, 255),
         Color.BLUE, new Color(75, 0, 130), Color.MAGENTA, Color.PINK, new Color(255, 182, 193)
-=======
-        Color.BLACK, Color.GRAY, Color.WHITE, Color.RED,
-        Color.ORANGE, Color.YELLOW, Color.GREEN, Color.CYAN,
-        Color.BLUE, Color.MAGENTA, new Color(128, 0, 128), new Color(139, 69, 19)
->>>>>>> main
     };
 
     /**
      * Construtor da Paleta de Cores.
      * 
-<<<<<<< HEAD
      * @param painelDesenho Referencia ao PainelDesenho
      */
     public PaletaCores(PainelDesenho painelDesenho) {
@@ -63,20 +43,10 @@ public class PaletaCores extends JPanel {
         JPanel painelCoresGrid = new JPanel(new GridLayout(10, 2, 6, 6));
         painelCoresGrid.setOpaque(false);
 
-=======
-     * @param painelDesenho Referencia ao PainelDesenho para atualizar a cor selecionada
-     */
-    public PaletaCores(PainelDesenho painelDesenho) {
-        this.painelDesenho = painelDesenho;
-        setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-
-        // Cria um botao para cada cor da paleta
->>>>>>> main
         for (Color cor : CORES) {
             JButton btnCor = new JButton();
             btnCor.setBackground(cor);
             btnCor.setOpaque(true);
-<<<<<<< HEAD
             btnCor.setBorder(BorderFactory.createLineBorder(new Color(180, 180, 180), 1));
             btnCor.setPreferredSize(new Dimension(36, 36));
             btnCor.setFocusPainted(false);
@@ -122,23 +92,5 @@ public class PaletaCores extends JPanel {
             BorderFactory.createEmptyBorder(6, 10, 6, 10)
         ));
         return btn;
-=======
-            btnCor.setBorderPainted(true);
-            btnCor.setPreferredSize(new Dimension(30, 30));
-
-            btnCor.addActionListener(e -> painelDesenho.setCorAtual(cor));
-            add(btnCor);
-        }
-
-        // Botao especial de borracha (cor branca)
-        JButton btnBorracha = new JButton("Borracha");
-        btnBorracha.addActionListener(e -> painelDesenho.setCorAtual(Color.WHITE));
-        add(btnBorracha);
-
-        // Botao de limpar todo o desenho
-        JButton btnLimpar = new JButton("Limpar Tudo");
-        btnLimpar.addActionListener(e -> painelDesenho.limpar());
-        add(btnLimpar);
->>>>>>> main
     }
 }

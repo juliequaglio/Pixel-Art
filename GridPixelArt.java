@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Graphics;
-<<<<<<< HEAD
 import java.awt.image.BufferedImage;
 
 /**
@@ -9,16 +8,6 @@ import java.awt.image.BufferedImage;
  * 
  * @author Julie Quaglio
  * @version 3.0
-=======
-
-/**
- * Gerencia a matriz de pixels e realiza os calculos do sistema de coordenadas,
- * convertendo posicoes em pixels de tela para coordenadas de matriz.
- * Cada pixel e renderizado como um retangulo (primitiva grafica).
- * 
- * @author Julie Quaglio
- * @version 1.0
->>>>>>> main
  */
 public class GridPixelArt implements IDesenhavel {
     private int colunas;
@@ -31,11 +20,7 @@ public class GridPixelArt implements IDesenhavel {
      * 
      * @param colunas Numero de colunas na matriz
      * @param linhas Numero de linhas na matriz
-<<<<<<< HEAD
      * @param tamanhoPixelTela Tamanho em pixels de cada bloco/retangulo
-=======
-     * @param tamanhoPixelTela Tamanho em pixels de cada bloco/retangulo na tela
->>>>>>> main
      */
     public GridPixelArt(int colunas, int linhas, int tamanhoPixelTela) {
         this.colunas = colunas;
@@ -57,11 +42,7 @@ public class GridPixelArt implements IDesenhavel {
     }
 
     /**
-<<<<<<< HEAD
      * Pinta um pixel especifico na matriz logica a partir de coordenadas de tela.
-=======
-     * Pinta um pixel especifico na matriz logica a partir de coordenadas de tela (x, y do mouse).
->>>>>>> main
      * 
      * @param mouseX Coordenada X na tela (pixels)
      * @param mouseY Coordenada Y na tela (pixels)
@@ -87,26 +68,17 @@ public class GridPixelArt implements IDesenhavel {
             for (int c = 0; c < colunas; c++) {
                 Pixel p = matriz[l][c];
                 
-<<<<<<< HEAD
                 // Desenha o retangulo preenchido com a cor do pixel
                 g.setColor(p.getCor());
                 g.fillRect(c * tamanhoPixelTela, l * tamanhoPixelTela, tamanhoPixelTela, tamanhoPixelTela);
                 
                 // Desenha a grade (contorno do retangulo) para orientacao visual
-=======
-                // Desenha a primitiva grafica: Retangulo preenchido com a cor do pixel
-                g.setColor(p.getCor());
-                g.fillRect(c * tamanhoPixelTela, l * tamanhoPixelTela, tamanhoPixelTela, tamanhoPixelTela);
-                
-                // Desenha a grade (contorno do retangulo) para facilitar o alinhamento visual
->>>>>>> main
                 g.setColor(new Color(220, 220, 220));
                 g.drawRect(c * tamanhoPixelTela, l * tamanhoPixelTela, tamanhoPixelTela, tamanhoPixelTela);
             }
         }
     }
 
-<<<<<<< HEAD
     /**
      * Converte a matriz de pixels em um BufferedImage para salvar como PNG.
      * 
@@ -126,8 +98,6 @@ public class GridPixelArt implements IDesenhavel {
         return imagem;
     }
 
-=======
->>>>>>> main
     public int getLarguraTotalTela() {
         return colunas * tamanhoPixelTela;
     }
@@ -135,11 +105,8 @@ public class GridPixelArt implements IDesenhavel {
     public int getAlturaTotalTela() {
         return linhas * tamanhoPixelTela;
     }
-<<<<<<< HEAD
 
     public void setTamanhoPixelTela(int tamanho) {
         this.tamanhoPixelTela = tamanho;
     }
-=======
->>>>>>> main
 }

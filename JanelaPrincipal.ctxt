@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #BlueJ class context
 comment0.target=JanelaPrincipal
 comment0.text=\r\n\ Janela\ principal\ configurada\ para\ EXECUTAR\ EM\ TELA\ CHEIA.\r\n\ Organiza\ o\ topo\ estilizado\ em\ tons\ de\ rosa\ e\ contraste\ escuro,\ \r\n\ paleta\ lateral\ e\ matriz\ centralizada.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 3.1\r\n
@@ -9,12 +8,3 @@ comment2.params=tamanho\ estilo
 comment2.target=java.awt.Font\ obterFonteRetro(int,\ int)
 comment2.text=\r\n\ Retorna\ a\ fonte\ retro\ em\ estilo\ Pixel\ Art\ com\ fallback\ seguro.\r\n
 numComments=3
-=======
-#BlueJ class context
-comment0.target=JanelaPrincipal
-comment0.text=\r\n\ Janela\ principal\ da\ aplicacao\ que\ agrupa\ o\ painel\ de\ desenho\ e\ a\ paleta\ de\ cores.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 1.0\r\n
-comment1.params=
-comment1.target=JanelaPrincipal()
-comment1.text=\r\n\ Construtor\ da\ JanelaPrincipal.\r\n
-numComments=2
->>>>>>> main
