@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=JanelaPrincipal
+comment0.text=\r\n\ Janela\ principal\ ({@link\ javax.swing.JFrame})\ da\ aplicacao,\ configurada\ para\r\n\ iniciar\ automaticamente\ em\ modo\ tela\ cheia\ ({@code\ MAXIMIZED_BOTH}).\r\n\ \r\n\ <p>Integra\ o\ cabecalho\ superior\ estilizado\ com\ instrucoes\ didaticas,\ a\ barra\ lateral\r\n\ de\ cores\ ({@link\ PaletaCores})\ e\ a\ area\ central\ de\ desenho\ ({@link\ PainelDesenho}).</p>\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ Ana\ Paula\ Barros\r\n\ Vitor\ Seiji\r\n\ \r\n\ @version\ 3.2\r\n
+comment1.params=
+comment1.target=JanelaPrincipal()
+comment1.text=\r\n\ Constroi\ e\ organiza\ todos\ os\ componentes\ visuais\ da\ janela\ principal\ da\ aplicacao.\r\n
+comment2.params=tamanho\ estilo
+comment2.target=java.awt.Font\ obterFonteRetro(int,\ int)
+comment2.text=\r\n\ Carrega\ a\ fonte\ retro\ {@code\ Pixelify\ Sans}\ caso\ esteja\ instalada\ no\ sistema\r\n\ ou\ retorna\ a\ fonte\ {@code\ Monospaced}\ como\ alternativa\ segura.\r\n\ \r\n\ @param\ tamanho\ Tamanho\ da\ fonte\ em\ pontos.\r\n\ @param\ estilo\ \ Estilo\ da\ fonte\ (ex\:\ {@link\ Font\#BOLD},\ {@link\ Font\#PLAIN}).\r\n\ @return\ Instancia\ de\ {@link\ java.awt.Font}\ configurada.\r\n
+numComments=3

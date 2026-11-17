@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Pixel
+comment0.text=\r\n\ Classe\ de\ modelo\ que\ representa\ um\ pixel\ individual\ dentro\ da\ matriz\ de\ desenho.\r\n\ \r\n\ <p>Armazena\ as\ coordenadas\ logicas\ da\ celula\ no\ plano\ cartesiano\ (coluna\ {@code\ x}\r\n\ e\ linha\ {@code\ y})\ e\ a\ sua\ respectiva\ cor\ no\ modelo\ RGB.</p>\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ Ana\ Paula\ Barros\r\n\ Vitor\ Seiji\r\n\ \r\n\ @version\ 3.2\r\n
+comment1.params=x\ y\ cor
+comment1.target=Pixel(int,\ int,\ java.awt.Color)
+comment1.text=\r\n\ Constroi\ uma\ nova\ instancia\ de\ {@code\ Pixel}\ com\ coordenadas\ e\ cor\ especificadas.\r\n\ \r\n\ @param\ x\ \ \ Posicao\ da\ coluna\ no\ grid\ (indice\ horizontal).\r\n\ @param\ y\ \ \ Posicao\ da\ linha\ no\ grid\ (indice\ vertical).\r\n\ @param\ cor\ Cor\ RGB\ inicial\ associada\ a\ este\ pixel.\r\n
+comment2.params=
+comment2.target=int\ getX()
+comment2.text=\r\n\ Obtem\ a\ coordenada\ horizontal\ (coluna)\ do\ pixel.\r\n\ \r\n\ @return\ O\ indice\ da\ coluna\ {@code\ x}.\r\n
+comment3.params=
+comment3.target=int\ getY()
+comment3.text=\r\n\ Obtem\ a\ coordenada\ vertical\ (linha)\ do\ pixel.\r\n\ \r\n\ @return\ O\ indice\ da\ linha\ {@code\ y}.\r\n
+comment4.params=
+comment4.target=java.awt.Color\ getCor()
+comment4.text=\r\n\ Obtem\ a\ cor\ atual\ do\ pixel.\r\n\ \r\n\ @return\ Objeto\ {@link\ java.awt.Color}\ representando\ a\ cor\ RGB\ do\ pixel.\r\n
+comment5.params=cor
+comment5.target=void\ setCor(java.awt.Color)
+comment5.text=\r\n\ Define\ ou\ altera\ a\ cor\ do\ pixel.\r\n\ \r\n\ @param\ cor\ Nova\ {@link\ java.awt.Color}\ a\ ser\ aplicada\ ao\ pixel.\r\n
+numComments=6

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\r\n\ Classe\ principal\ de\ inicializacao\ do\ sistema\ de\ Pixel\ Art.\r\n\ \r\n\ <p>Responsavel\ por\ iniciar\ a\ interface\ grafica\ de\ forma\ segura\ na\r\n\ Event\ Dispatch\ Thread\ (EDT)\ do\ Java\ Swing.</p>\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ Ana\ Paula\ Barros\r\n\ Vitor\ Seiji\r\n\ \r\n\ @version\ 3.2\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Ponto\ de\ entrada\ da\ aplicacao\ Java.\r\n\ \r\n\ @param\ args\ Argumentos\ de\ linha\ de\ comando\ (nao\ utilizados).\r\n
+numComments=2
