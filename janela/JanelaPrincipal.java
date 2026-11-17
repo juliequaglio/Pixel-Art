@@ -25,7 +25,7 @@ public class JanelaPrincipal extends JFrame {
     /**
      * Construtor da JanelaPrincipal.
      */
-    public JanelaPrincipal() {
+    public JanelaPrincipal(int largura, int altura) {
         setTitle("Pixel Art - Iniciacao a Logica Computacional");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
@@ -56,7 +56,7 @@ public class JanelaPrincipal extends JFrame {
         painelTopo.add(lblInstrucoes, BorderLayout.SOUTH);
 
         // 2. Grid de Desenho (Matriz 40x40 ajustada para a tela)
-        GridPixelArt grid = new GridPixelArt(40, 40, 18);
+        GridPixelArt grid = new GridPixelArt(largura, altura, 18);
         PainelDesenho painelDesenho = new PainelDesenho(grid);
 
         // Subpainel central

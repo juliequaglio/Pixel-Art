@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=JanelaPergunta
+comment1.params=
+comment1.target=int[]\ DefinirAlturaELargura()
+comment2.params=pergunta1\ pergunta2
+comment2.target=int[]\ pedirDoisNumeros(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Abre\ uma\ janela\ com\ duas\ perguntas\ e\ retorna\ um\ array\ int[2]\ com\ valores\ entre\ 1\ e\ 100.\r\n\ Retorna\ null\ se\ o\ usu\u00E1rio\ cancelar.\r\n
+numComments=3
