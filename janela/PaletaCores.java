@@ -12,14 +12,24 @@ import java.awt.BorderLayout;
 import java.awt.Font;
 
 /**
- * Barra lateral interativa contendo a paleta de cores e botoes de controle.
+ * Barra lateral interativa contendo a paleta de selecao de cores e os botoes
+ * de ferramentas (Borracha, Limpar Tudo, Salvar PNG e Abrir PNG).
  * 
- * @author Julie Quaglio
- * @version 3.0
+ * <p>Projetada com botoes amplos e cores contrastantes para facilitar a interacao
+ * intuitiva de criancas e estudantes.</p>
+ * 
+ * @author Julie Quaglio\
+ * Ana Paula Barros
+ * Vitor Seiji
+ * 
+ * @version 3.2
  */
 public class PaletaCores extends JPanel {
+
+    /** Referencia ao painel de desenho para atualizar a cor ativa e acionar comandos. */
     private PainelDesenho painelDesenho;
 
+    /** Conjunto pre-definido de 20 cores disponiveis na paleta. */
     private final Color[] CORES = {
         Color.BLACK, Color.DARK_GRAY, Color.GRAY, Color.LIGHT_GRAY, Color.WHITE,
         new Color(139, 69, 19), new Color(178, 34, 34), Color.RED, Color.ORANGE, Color.YELLOW,
@@ -28,9 +38,9 @@ public class PaletaCores extends JPanel {
     };
 
     /**
-     * Construtor da Paleta de Cores.
+     * Constroi a barra lateral de cores e botoes de acao vinculados ao {@link PainelDesenho}.
      * 
-     * @param painelDesenho Referencia ao PainelDesenho
+     * @param painelDesenho Instancia de {@link PainelDesenho} controlada pela paleta.
      */
     public PaletaCores(PainelDesenho painelDesenho) {
         this.painelDesenho = painelDesenho;
@@ -57,8 +67,8 @@ public class PaletaCores extends JPanel {
             painelCoresGrid.add(btnCor);
         }
 
-        // Subpainel de Acoes (Botoes Didaticos)
-        JPanel painelAcoes = new JPanel(new GridLayout(3, 1, 8, 8));
+        // Subpainel de Acoes
+        JPanel painelAcoes = new JPanel(new GridLayout(4, 1, 8, 8));
         painelAcoes.setOpaque(false);
 
         JButton btnBorracha = criarBotaoEstilizado("Borracha", new Color(230, 230, 240), Color.BLACK);
@@ -70,9 +80,13 @@ public class PaletaCores extends JPanel {
         JButton btnSalvar = criarBotaoEstilizado("Salvar PNG", new Color(220, 245, 220), new Color(0, 120, 0));
         btnSalvar.addActionListener(e -> painelDesenho.salvarDesenho());
 
+        JButton btnAbrir = criarBotaoEstilizado("Abrir PNG", new Color(220, 235, 255), new Color(0, 70, 160));
+        btnAbrir.addActionListener(e -> painelDesenho.abrirDesenho());
+
         painelAcoes.add(btnBorracha);
         painelAcoes.add(btnLimpar);
         painelAcoes.add(btnSalvar);
+        painelAcoes.add(btnAbrir);
 
         JLabel lblTituloPaleta = new JLabel("CORES", SwingConstants.CENTER);
         lblTituloPaleta.setFont(new Font("Pixelify Sans", Font.BOLD, 14));
@@ -83,6 +97,14 @@ public class PaletaCores extends JPanel {
         add(painelAcoes, BorderLayout.SOUTH);
     }
 
+    /**
+     * Metodo auxiliar para criar botoes estilizados com cores e bordas personalizadas.
+     * 
+     * @param texto Rotulo textual exibido no botao.
+     * @param bg    Cor de fundo ({@link java.awt.Color}) do botao.
+     * @param fg    Cor do texto ({@link java.awt.Color}) do botao.
+     * @return Instancia configurada de {@link javax.swing.JButton}.
+     */
     private JButton criarBotaoEstilizado(String texto, Color bg, Color fg) {
         JButton btn = new JButton(texto);
         btn.setFont(new Font("SansSerif", Font.BOLD, 12));

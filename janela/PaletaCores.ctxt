@@ -1,9 +1,10 @@
 #BlueJ class context
 comment0.target=PaletaCores
-comment0.text=\r\n\ Barra\ lateral\ interativa\ contendo\ a\ paleta\ de\ cores\ e\ botoes\ de\ controle.\r\n\ \r\n\ @author\ Julie\ Quaglio\r\n\ @version\ 3.0\r\n
+comment0.text=\r\n\ Barra\ lateral\ interativa\ contendo\ a\ paleta\ de\ selecao\ de\ cores\ e\ os\ botoes\r\n\ de\ ferramentas\ (Borracha,\ Limpar\ Tudo,\ Salvar\ PNG\ e\ Abrir\ PNG).\r\n\ \r\n\ <p>Projetada\ com\ botoes\ amplos\ e\ cores\ contrastantes\ para\ facilitar\ a\ interacao\r\n\ intuitiva\ de\ criancas\ e\ estudantes.</p>\r\n\ \r\n\ @author\ Julie\ Quaglio\\\r\n\ Ana\ Paula\ Barros\r\n\ Vitor\ Seiji\r\n\ \r\n\ @version\ 3.2\r\n
 comment1.params=painelDesenho
 comment1.target=PaletaCores(PainelDesenho)
-comment1.text=\r\n\ Construtor\ da\ Paleta\ de\ Cores.\r\n\ \r\n\ @param\ painelDesenho\ Referencia\ ao\ PainelDesenho\r\n
+comment1.text=\r\n\ Constroi\ a\ barra\ lateral\ de\ cores\ e\ botoes\ de\ acao\ vinculados\ ao\ {@link\ PainelDesenho}.\r\n\ \r\n\ @param\ painelDesenho\ Instancia\ de\ {@link\ PainelDesenho}\ controlada\ pela\ paleta.\r\n
 comment2.params=texto\ bg\ fg
 comment2.target=javax.swing.JButton\ criarBotaoEstilizado(java.lang.String,\ java.awt.Color,\ java.awt.Color)
+comment2.text=\r\n\ Metodo\ auxiliar\ para\ criar\ botoes\ estilizados\ com\ cores\ e\ bordas\ personalizadas.\r\n\ \r\n\ @param\ texto\ Rotulo\ textual\ exibido\ no\ botao.\r\n\ @param\ bg\ \ \ \ Cor\ de\ fundo\ ({@link\ java.awt.Color})\ do\ botao.\r\n\ @param\ fg\ \ \ \ Cor\ do\ texto\ ({@link\ java.awt.Color})\ do\ botao.\r\n\ @return\ Instancia\ configurada\ de\ {@link\ javax.swing.JButton}.\r\n
 numComments=3
